@@ -5,9 +5,18 @@
         "laravel",
         "nova"
     ],
+    "homepage": "https://github.com/sashalenz/has-many-count",
+    "authors": [
+        {
+            "name": "Aleksandr Petrovskyi",
+            "email": "sashalenz@gmail.com",
+            "role": "Developer"
+        }
+    ],
     "license": "MIT",
     "require": {
-        "php": ">=7.1.0"
+        "php": ">=7.1.0",
+        "laravel/nova": "*"
     },
     "autoload": {
         "psr-4": {
