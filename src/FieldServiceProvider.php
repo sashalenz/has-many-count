@@ -13,7 +13,6 @@ class FieldServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    #[\Override]
     public function boot(): void
     {
         Nova::serving(function (ServingNova $event) {
