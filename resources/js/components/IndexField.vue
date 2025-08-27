@@ -15,7 +15,9 @@
 </template>
 
 <script>
-    export default {
-        props: ['resourceName', 'field'],
-    }
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+    props: ['resourceName', 'field'],
+})
 </script>

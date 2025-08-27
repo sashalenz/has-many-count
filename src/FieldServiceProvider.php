@@ -13,7 +13,7 @@ class FieldServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(): void
     {
         Nova::serving(function (ServingNova $event) {
             Nova::script('has-many-count', __DIR__.'/../dist/js/field.js');
@@ -25,7 +25,8 @@ class FieldServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
+    #[\Override]
+    public function register(): void
     {
         //
     }

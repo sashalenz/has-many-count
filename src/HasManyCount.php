@@ -45,7 +45,8 @@ class HasManyCount extends Field
      * @param  string|null  $attribute
      * @return void
      */
-    public function resolveForDisplay($resource, $attribute = null)
+    #[\Override]
+    public function resolveForDisplay(mixed $resource, ?string $attribute = null): void
     {
         $attribute = $attribute ?? $this->attribute;
         $this->value = $resource->$attribute()->count();
@@ -57,7 +58,8 @@ class HasManyCount extends Field
      *
      * @return array
      */
-    public function meta()
+    #[\Override]
+    public function meta(): array
     {
         return array_merge([
             'id' => $this->id,
